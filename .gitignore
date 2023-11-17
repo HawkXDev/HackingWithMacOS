@@ -187,4 +187,4 @@ xcuserdata/
 #
 
 *.xcplayground
-*.xcworkspace
+playground.xcworkspace
