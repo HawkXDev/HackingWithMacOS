@@ -740,7 +740,7 @@
                                     <rect key="frame" x="1" y="1" width="248" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" id="tZc-GF-Rz1">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-GF-Rz1">
                                             <rect key="frame" x="0.0" y="0.0" width="248" height="298"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
@@ -773,9 +773,9 @@
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="centerX" secondItem="cLA-il-gHD" secondAttribute="centerX" id="EjF-TV-pwz"/>
-                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="centerY" secondItem="cLA-il-gHD" secondAttribute="centerY" id="R1N-DF-1oT"/>
-                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="leading" secondItem="cLA-il-gHD" secondAttribute="leading" constant="2" id="haQ-QW-MTG"/>
+                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="leading" secondItem="cLA-il-gHD" secondAttribute="leading" constant="2" id="KnK-dZ-Oq5"/>
+                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="centerX" secondItem="cLA-il-gHD" secondAttribute="centerX" id="mJk-DR-ahM"/>
+                                                                <constraint firstItem="07t-Kc-xi3" firstAttribute="centerY" secondItem="cLA-il-gHD" secondAttribute="centerY" id="ruL-Tj-PIz"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="07t-Kc-xi3" id="Bko-KR-ux6"/>
@@ -793,7 +793,7 @@
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="FeY-Sl-wKy">
-                                    <rect key="frame" x="1" y="283" width="223" height="16"/>
+                                    <rect key="frame" x="1" y="283" width="248" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Tnf-yd-k7b">
@@ -803,8 +803,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="BUb-eO-e3L" firstAttribute="leading" secondItem="p3S-3D-Vl0" secondAttribute="leading" id="eea-CR-TzC"/>
-                            <constraint firstItem="BUb-eO-e3L" firstAttribute="top" secondItem="p3S-3D-Vl0" secondAttribute="top" id="m8E-n6-Yf3"/>
+                            <constraint firstItem="BUb-eO-e3L" firstAttribute="leading" secondItem="p3S-3D-Vl0" secondAttribute="leading" id="C2p-hy-k1I"/>
+                            <constraint firstAttribute="bottom" secondItem="BUb-eO-e3L" secondAttribute="bottom" id="RBl-Jd-Zd2"/>
+                            <constraint firstAttribute="trailing" secondItem="BUb-eO-e3L" secondAttribute="trailing" id="VlH-8S-WEg"/>
+                            <constraint firstItem="BUb-eO-e3L" firstAttribute="top" secondItem="p3S-3D-Vl0" secondAttribute="top" id="yNE-wy-jf5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -829,10 +831,10 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="sb5-YP-26j" firstAttribute="top" secondItem="xoF-pg-ruf" secondAttribute="top" id="LvF-p5-Kr1"/>
-                            <constraint firstAttribute="trailing" secondItem="sb5-YP-26j" secondAttribute="trailing" id="V1T-ca-1dh"/>
-                            <constraint firstItem="sb5-YP-26j" firstAttribute="leading" secondItem="xoF-pg-ruf" secondAttribute="leading" id="uAA-Ln-aqj"/>
-                            <constraint firstAttribute="bottom" secondItem="sb5-YP-26j" secondAttribute="bottom" id="xJf-gr-Ro0"/>
+                            <constraint firstAttribute="bottom" secondItem="sb5-YP-26j" secondAttribute="bottom" id="4zG-Rt-bib"/>
+                            <constraint firstItem="sb5-YP-26j" firstAttribute="top" secondItem="xoF-pg-ruf" secondAttribute="top" id="RAU-fS-fYF"/>
+                            <constraint firstAttribute="trailing" secondItem="sb5-YP-26j" secondAttribute="trailing" id="gUr-fo-G6C"/>
+                            <constraint firstItem="sb5-YP-26j" firstAttribute="leading" secondItem="xoF-pg-ruf" secondAttribute="leading" id="rqh-E6-0Mv"/>
                         </constraints>
                     </view>
                     <connections>
