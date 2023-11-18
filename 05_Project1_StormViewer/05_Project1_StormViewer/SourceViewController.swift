@@ -11,13 +11,27 @@ class SourceViewController: NSViewController, NSTableViewDataSource, NSTableView
 
     @IBOutlet var tableView: NSTableView!
     
+    var pictures = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        // get a list of all files in our bundles resource path
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        let items = try! fm.contentsOfDirectory(atPath: path)
+        
+        // loop over each file we found
+        for item in items {
+            // if this item starts with "nssl" add it to our array
+            if (item.hasPrefix("nssl")) {
+                pictures.append(item)
+            }
+        }
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 100
+        return pictures.count
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
@@ -27,7 +41,7 @@ class SourceViewController: NSViewController, NSTableViewDataSource, NSTableView
             return nil
         }
         
-        vw.textField?.stringValue = "Hello World!"
+        vw.textField?.stringValue = pictures[row]
         return vw
     }
     

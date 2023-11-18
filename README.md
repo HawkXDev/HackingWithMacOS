@@ -9,6 +9,6 @@ Image Viewer Application.
 - NSViewController, NSTableView, NSImageView
 - Vertical Split View Controller
 - Table View
-- Image Button
+- Image View
 - key concepts
 - project menu
