@@ -6,6 +6,8 @@ Image Viewer Application.
 ## Using
 
 - Xcode 15 & Swift 5
+- NSViewController
+- Vertical Split View Controller
+- Table View
 - key concepts
 - project menu
-- Split View Controller
