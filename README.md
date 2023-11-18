@@ -6,7 +6,7 @@ Image Viewer Application.
 ## Using
 
 - Xcode 15 & Swift 5
-- NSViewController
+- NSViewController, NSTableView, NSImageView
 - Vertical Split View Controller
 - Table View
 - Image Button
