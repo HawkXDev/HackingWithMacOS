@@ -706,11 +706,14 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="_6_Project2_BullsAndCows" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="269"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-mV-WcT">
-                                <rect key="frame" x="36" y="228" width="100" height="22"/>
+                                <rect key="frame" x="36" y="228" width="103" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="EKW-ZH-Rd1"/>
+                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Enter a guess..." drawsBackground="YES" id="hdw-CU-eRe">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -727,8 +730,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="ucs-hT-ZUq"/>
-                                    <constraint firstAttribute="width" constant="67" id="xCI-4i-CDP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="SWF-4H-2hc"/>
                                 </constraints>
                                 <connections>
                                     <action selector="submitGuess:" target="XfG-lQ-9wD" id="vgC-dl-dCI"/>
@@ -846,14 +848,13 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="O8Q-X0-Bkh" secondAttribute="trailing" constant="36" id="49n-FY-Uvx"/>
-                            <constraint firstItem="O8Q-X0-Bkh" firstAttribute="leading" secondItem="SPS-mV-WcT" secondAttribute="trailing" constant="11" id="5RI-od-rp5"/>
+                            <constraint firstAttribute="trailing" secondItem="O8Q-X0-Bkh" secondAttribute="trailing" constant="36" id="Aml-dW-aj8"/>
+                            <constraint firstItem="SPS-mV-WcT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="36" id="BzA-lM-Ovk"/>
                             <constraint firstItem="ImV-qa-GSr" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="LyN-0k-Koa"/>
                             <constraint firstAttribute="bottom" secondItem="ImV-qa-GSr" secondAttribute="bottom" id="SJf-WR-oNu"/>
-                            <constraint firstItem="SPS-mV-WcT" firstAttribute="centerY" secondItem="O8Q-X0-Bkh" secondAttribute="centerY" id="bkJ-Hy-fvb"/>
                             <constraint firstItem="ImV-qa-GSr" firstAttribute="top" secondItem="SPS-mV-WcT" secondAttribute="bottom" constant="19" id="byr-we-TBz"/>
                             <constraint firstItem="SPS-mV-WcT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="cy7-ql-dzt"/>
-                            <constraint firstItem="SPS-mV-WcT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="36" id="hP9-gc-xAk"/>
+                            <constraint firstItem="O8Q-X0-Bkh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SPS-mV-WcT" secondAttribute="trailing" constant="8" symbolic="YES" id="fqs-ZC-gvO"/>
                             <constraint firstAttribute="trailing" secondItem="ImV-qa-GSr" secondAttribute="trailing" id="l03-Q5-i2d"/>
                             <constraint firstItem="ImV-qa-GSr" firstAttribute="top" secondItem="O8Q-X0-Bkh" secondAttribute="bottom" constant="20" symbolic="YES" id="vMy-Ef-zH3"/>
                         </constraints>
@@ -865,7 +866,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="654.5"/>
         </scene>
     </scenes>
 </document>
