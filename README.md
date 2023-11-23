@@ -4,7 +4,7 @@ Image Viewer Application.
 
 
 <p align="center">
-<img src="Screenshots/Screenshot 1.png" width="250">
+<img src="Screenshots/Screenshot 1.png" width="500">
 </p>
 
 
@@ -19,6 +19,7 @@ Image Viewer Application.
 - Project Menu
 
 
+
 # Project 2 - Bulls and Cows
 
 Game.
@@ -27,8 +28,7 @@ Game.
 ## Using
 
 - Xcode 15 & Swift 5
-- NSTableView, NSTextField, NSButton
-- NSTableCellView, NSTableColumn, NSAlert
-- GamePlatKit
+- NSTableView, NSTableColumn, NSTableCellView
+- NSTextField, NSButton, NSAlert
 - Random Numbers
 - Text Input

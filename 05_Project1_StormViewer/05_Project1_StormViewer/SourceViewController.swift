@@ -42,6 +42,11 @@ class SourceViewController: NSViewController, NSTableViewDataSource, NSTableView
         }
         
         vw.textField?.stringValue = pictures[row]
+        
+        if let image = NSImage(named: NSImage.Name(pictures[row])) {
+            vw.imageView?.image = image
+        }
+        
         return vw
     }
     
