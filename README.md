@@ -1,6 +1,6 @@
 # Project 1 - Storm Viewer
 
-Image Viewer Application.
+Image Viewer Application
 
 
 <p align="center">
@@ -18,11 +18,11 @@ Image Viewer Application.
 - Key Concepts
 - Project Menu
 
-
+<br>
 
 # Project 2 - Bulls and Cows
 
-Game.
+Game
 
 
 ## Using
