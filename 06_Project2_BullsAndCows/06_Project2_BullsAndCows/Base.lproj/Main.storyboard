@@ -710,7 +710,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-mV-WcT">
-                                <rect key="frame" x="36" y="172" width="103" height="21"/>
+                                <rect key="frame" x="36" y="116" width="103" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="EKW-ZH-Rd1"/>
                                 </constraints>
@@ -724,7 +724,7 @@
                                 </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O8Q-X0-Bkh">
-                                <rect key="frame" x="140" y="166" width="81" height="32"/>
+                                <rect key="frame" x="140" y="110" width="81" height="32"/>
                                 <buttonCell key="cell" type="push" title="Go" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CSv-Q3-Z2A">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -737,13 +737,13 @@
                                 </connections>
                             </button>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImV-qa-GSr">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="153"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="97"/>
                                 <clipView key="contentView" id="PHN-zw-fbn">
-                                    <rect key="frame" x="1" y="1" width="248" height="151"/>
+                                    <rect key="frame" x="1" y="1" width="248" height="95"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="24" rowSizeStyle="automatic" headerView="4aQ-Pb-bxO" viewBased="YES" id="KWx-pf-uul">
-                                            <rect key="frame" x="0.0" y="0.0" width="249" height="123"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="249" height="67"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -834,7 +834,7 @@
                                     <constraint firstAttribute="width" constant="250" id="ZLQ-mX-69k"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="dWo-Ob-CPs">
-                                    <rect key="frame" x="1" y="136" width="248" height="16"/>
+                                    <rect key="frame" x="1" y="80" width="248" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="TSb-jG-WcW">

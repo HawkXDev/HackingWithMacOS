@@ -2,11 +2,9 @@
 
 Image Viewer Application
 
-
 <p align="center">
 <img src="Screenshots/Screenshot 1.png" width="500">
 </p>
-
 
 ## Using
 
@@ -24,6 +22,9 @@ Image Viewer Application
 
 Game
 
+<p align="center">
+<img src="Screenshots/Screenshot 2.png" width="500">
+</p>
 
 ## Using
 
@@ -32,3 +33,18 @@ Game
 - NSTextField, NSButton, NSAlert
 - Random Numbers
 - Text Input
+
+<br>
+
+# Project 3 - Social Media
+
+Picture sharing functionality
+
+## Using
+
+- Xcode 15 & Swift 5
+- NSSharingServicePicker
+- NSToolBar, NSToolBarItem
+- sharing button
+
+<br>

@@ -14,6 +14,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     var answer = ""
     var guesses = [String]()
+    var steps = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     
     @IBAction func submitGuess(_ sender: Any) {
+        steps += 1
+        
         // check for 4 unique characters
         let guessString = guess.stringValue
         guard Set(guessString).count == 4 else { return }
@@ -44,8 +47,18 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         let resultString = result(for: guessString)
         
         if (resultString.contains("4b")) {
+            var messageText = "You win! \(steps) steps.\n"
+            
+            if (steps < 10) {
+                messageText += "That's the great result!"
+            } else if (steps < 20) {
+                messageText += "Good result!"
+            } else {
+                messageText += "Could be better!"
+            }
+
             let alert = NSAlert()
-            alert.messageText = "You win"
+            alert.messageText = messageText
             alert.informativeText = "Congratulations! Click OK to play again."
             alert.runModal()
             
@@ -97,6 +110,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         guess.stringValue = ""
         guesses.removeAll()
         answer = ""
+        steps = 0
         
         var numbers = Array(0...9)
         numbers.shuffle()
