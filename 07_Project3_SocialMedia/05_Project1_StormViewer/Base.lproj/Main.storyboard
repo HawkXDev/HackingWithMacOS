@@ -107,18 +107,43 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="_5_Project1_StormViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Storm Viewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="270"/>
+                        <toolbar key="toolbar" implicitIdentifier="07BC985D-3DEA-4BEC-878E-808655AA9C43" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="zyB-bL-psp">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="las-ja-hCj"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="aLv-Ug-6RV"/>
+                                <toolbarItem implicitItemIdentifier="9B0ABB55-B098-4B37-B02D-E5A905CFC13A" label="" paletteLabel="" image="NSShareTemplate" sizingBehavior="auto" id="jT0-XI-x2a">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="deT-mn-UZB">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2pz-fM-EmA">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="sharedClicked:" target="Oky-zY-oP4" id="Uqa-yf-Vfl"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="aLv-Ug-6RV"/>
+                                <toolbarItem reference="jT0-XI-x2a"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="shareButton" destination="deT-mn-UZB" id="pP6-io-3OD"/>
                         <segue destination="FC6-dq-npE" kind="relationship" relationship="window.shadowedContentViewController" id="Wzg-EN-YPb"/>
                     </connections>
                 </windowController>
@@ -126,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Split View Controller-->
+        <!--View Controller-->
         <scene sceneID="WKR-8b-dUc">
             <objects>
-                <splitViewController id="FC6-dq-npE" sceneMemberID="viewController">
+                <splitViewController id="FC6-dq-npE" customClass="ViewController" customModule="_5_Project1_StormViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="260" id="k8A-nO-XdW"/>
                         <splitViewItem id="lZ3-Ov-XmY"/>
@@ -160,13 +185,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="80" horizontalPageScroll="10" verticalLineScroll="80" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUb-eO-e3L">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="294"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="292"/>
                                 <clipView key="contentView" drawsBackground="NO" id="AUL-VU-2OA">
-                                    <rect key="frame" x="1" y="1" width="248" height="292"/>
+                                    <rect key="frame" x="1" y="1" width="248" height="290"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" misplaced="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="80" viewBased="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-GF-Rz1">
-                                            <rect key="frame" x="0.0" y="0.0" width="248" height="292"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="248" height="290"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -284,5 +309,6 @@
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="20" height="20"/>
+        <image name="NSShareTemplate" width="19" height="23"/>
     </resources>
 </document>

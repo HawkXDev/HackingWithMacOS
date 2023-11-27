@@ -23,6 +23,7 @@
 		4C35FE0A2B07AE3400990076 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C35FE002B07AE3400990076 /* nssl0034.jpg */; };
 		4C35FE0C2B0897A800990076 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C35FE0B2B0897A800990076 /* SourceViewController.swift */; };
 		4C35FE0E2B0898C300990076 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C35FE0D2B0898C300990076 /* DetailViewController.swift */; };
+		4C8C94CF2B14884200059B45 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C94CE2B14884200059B45 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		4C35FE002B07AE3400990076 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		4C35FE0B2B0897A800990076 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		4C35FE0D2B0898C300990076 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4C8C94CE2B14884200059B45 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4C35FDE92B07A6B500990076 /* ViewController.swift */,
 				4C35FDEB2B07A6B800990076 /* Assets.xcassets */,
 				4C35FDED2B07A6B800990076 /* Main.storyboard */,
+				4C8C94CE2B14884200059B45 /* WindowController.swift */,
 				4C35FE0B2B0897A800990076 /* SourceViewController.swift */,
 				4C35FE0D2B0898C300990076 /* DetailViewController.swift */,
 				4C35FDF62B07AE3400990076 /* Content */,
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C35FDEA2B07A6B500990076 /* ViewController.swift in Sources */,
+				4C8C94CF2B14884200059B45 /* WindowController.swift in Sources */,
 				4C35FDE82B07A6B500990076 /* AppDelegate.swift in Sources */,
 				4C35FE0E2B0898C300990076 /* DetailViewController.swift in Sources */,
 				4C35FE0C2B0897A800990076 /* SourceViewController.swift in Sources */,
