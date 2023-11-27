@@ -24,5 +24,17 @@ class WindowController: NSWindowController {
         let picker = NSSharingServicePicker(items: [image])
         picker.show(relativeTo: .zero, of: sender, preferredEdge: .maxY)
     }
+    
+    @IBAction func infoClicked(_ sender: NSView) {
+        guard let split = contentViewController as? NSSplitViewController else { return }
+        guard let source = split.children[0] as? SourceViewController else { return }
+        guard let tableView = source.tableView else { return }
+        guard tableView.selectedRow != -1 else { return }
+        
+        let alert = NSAlert()
+        alert.messageText = "Picture info"
+        alert.informativeText = "You have chosen a picture \(source.pictures[tableView.selectedRow])"
+        alert.runModal()
+    }
 
 }

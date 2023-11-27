@@ -118,6 +118,20 @@
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="las-ja-hCj"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="aLv-Ug-6RV"/>
+                                <toolbarItem implicitItemIdentifier="8A73218C-53B4-4949-977B-BEDE9A01A7F9" label="" paletteLabel="" image="NSTouchBarGetInfoTemplate" title="Textured Rounded" sizingBehavior="auto" id="LZk-IS-JxI">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="Pew-qn-hGq">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Textured Rounded" bezelStyle="texturedRounded" image="NSTouchBarGetInfoTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sQ7-s7-Edd">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="infoClicked:" target="Oky-zY-oP4" id="Bwc-1X-CTr"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="9B0ABB55-B098-4B37-B02D-E5A905CFC13A" label="" paletteLabel="" image="NSShareTemplate" sizingBehavior="auto" id="jT0-XI-x2a">
                                     <nil key="toolTip"/>
                                     <button key="view" verticalHuggingPriority="750" id="deT-mn-UZB">
@@ -135,6 +149,7 @@
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="aLv-Ug-6RV"/>
+                                <toolbarItem reference="LZk-IS-JxI"/>
                                 <toolbarItem reference="jT0-XI-x2a"/>
                             </defaultToolbarItems>
                         </toolbar>
@@ -310,5 +325,6 @@
     <resources>
         <image name="NSActionTemplate" width="20" height="20"/>
         <image name="NSShareTemplate" width="19" height="23"/>
+        <image name="NSTouchBarGetInfoTemplate" width="20" height="20"/>
     </resources>
 </document>
