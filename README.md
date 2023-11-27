@@ -52,3 +52,18 @@ Picture sharing functionality
 - sharing button
 
 <br>
+
+# Project 4 - Grid Browser
+
+Browses multiple sites
+
+## Using
+
+- Xcode 15 & Swift 5
+- NSStackView, WKWebView
+- URL, URLRequest, CALayer
+- NSClieckGestureRecognizer
+- NSTouchBar, NSPopOverTouchBarItem
+- NSSegmentedControl
+
+<br>
