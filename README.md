@@ -40,6 +40,10 @@ Game
 
 Picture sharing functionality
 
+<p align="center">
+<img src="Screenshots/Screenshot 3.png" width="500">
+</p>
+
 ## Using
 
 - Xcode 15 & Swift 5
