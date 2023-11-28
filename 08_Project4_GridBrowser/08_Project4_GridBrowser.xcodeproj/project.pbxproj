@@ -11,6 +11,7 @@
 		4C8C94DF2B14D0F600059B45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C94DE2B14D0F600059B45 /* ViewController.swift */; };
 		4C8C94E12B14D0F900059B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C94E02B14D0F900059B45 /* Assets.xcassets */; };
 		4C8C94E42B14D0F900059B45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8C94E22B14D0F900059B45 /* Main.storyboard */; };
+		4C8C94EC2B15D69A00059B45 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8C94EB2B15D69A00059B45 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4C8C94E02B14D0F900059B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8C94E32B14D0F900059B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C8C94E52B14D0F900059B45 /* _8_Project4_GridBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _8_Project4_GridBrowser.entitlements; sourceTree = "<group>"; };
+		4C8C94EB2B15D69A00059B45 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				4C8C94DE2B14D0F600059B45 /* ViewController.swift */,
 				4C8C94E02B14D0F900059B45 /* Assets.xcassets */,
 				4C8C94E22B14D0F900059B45 /* Main.storyboard */,
+				4C8C94EB2B15D69A00059B45 /* WindowController.swift */,
 				4C8C94E52B14D0F900059B45 /* _8_Project4_GridBrowser.entitlements */,
 			);
 			path = 08_Project4_GridBrowser;
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8C94DF2B14D0F600059B45 /* ViewController.swift in Sources */,
+				4C8C94EC2B15D69A00059B45 /* WindowController.swift in Sources */,
 				4C8C94DD2B14D0F600059B45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
